@@ -1,0 +1,190 @@
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav {
+				width:600px; /*Le establecemos un ancho*/
+				margin:0 auto; /*Centramos automaticamente*/
+			    float: left;
+			    padding: 15px;
+			}
+ 
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			body {
+				background-image: url(../imagenes/fondoweb.jpg);
+				text-align: center;
+			}
+			h1 {
+				font-family: 'Quicksand', sans-serif;
+			}
+			a:link {
+				color: grey;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			a:visited {
+				color: grey;
+				background-color: transparent;
+				text-decoration: none;
+			}
+			table, th, td {
+				border: 1px solid black; border-collapse: collapse; padding: 10px;
+			}
+			.col {
+				column-count: 2;
+				column-gap: 30px;
+				column-rule-style: solid;
+				column-rule-color: grey;
+			}
+			div.gallery {
+			    margin: 5px;
+			    border: 1px solid #ccc;
+			    float: left;
+			    width: 180px;
+			    margin-left: 10%
+			}
+
+			div.gallery:hover {
+			    border: 1px solid #777;
+			}
+
+			div.gallery img {
+			    width: 100%;
+			    height: auto;
+			}
+
+			div.desc {
+			    padding: 15px;
+			    text-align: center;
+			}
+			input[type=text] {
+				width: 30%;
+			    padding: 12px 20px;
+    			margin: 8px 0;
+    			box-sizing: border-box;	
+    			border: 2px solid grey;
+    			border-radius: 4px;
+}
+			}
+			input[type=text]:focus {
+			    background-color: lightgrey;
+			    border: 3px solid #555;
+			}
+			select, datalist {
+			    width: 30%;
+			    padding: 16px 20px;
+			    border: 2px solid grey;
+			    border-radius: 4px;
+			    background-color: lightgrey;
+			}
+			input[type=button], input[type=submit], input[type=reset] {
+			    background-color: #4CAF50;
+			    border: none;
+			    color: white;
+			    padding: 16px 32px;
+			    text-decoration: none;
+			    margin: 4px 2px;
+			    cursor: pointer;
+			}
+			input[type=text] {
+			    background-color: white;
+			    background-image: url('../imagenes/searchicon.png');
+			    background-position: 1px -7px; 
+			    background-repeat: no-repeat;
+			    padding-left: 40px;
+			    opacity: 0.3;
+			}
+			textarea {
+				width: 40%;
+			    height: 150px;
+			    padding: 12px 20px;
+			    box-sizing: border-box;
+			    border: 2px solid grey;
+			    border-radius: 4px;
+			    background-color: #f8f8f8;
+			    font-size: 16px;
+			    resize: none;
+			}
+			.shadow {
+				text-shadow: 2px 2px 5px grey;
+			}
+			.gradiente {
+				background-image: linear-gradient(red, yellow, red);	
+			}
+			div.movimiento {
+				margin-left: 40%;
+				width: 60px;
+			    height: 60px;
+			    background-color: grey;
+			    position: relative;
+			    animation-name: mov;
+			    animation-duration: 4s;
+			    animation-timing-function: linear;
+			    animation-delay: 1s;
+			    animation-iteration-count: infinite;
+			    animation-direction: alternate;
+			}
+			@keyframes mov {
+			    0%   {background-color:blue; left:0px; top:0px;}
+			    25%  {background-color:grey; left:200px; top:0px;}
+			    50%  {background-color:green; left:200px; top:200px;}
+			    75%  {background-color:orange; left:0px; top:200px;}
+			    100% {background-color:black; left:0px; top:0px;}
+			}
+			.pagination {
+			    display: inline-block;
+			}
+			.pagination a {
+			    color: black;
+			    float: left;
+			    padding: 8px 16px;
+			    text-decoration: none;
+			}
+			.pagination a.active {
+			    background-color: grey;
+			    color: white;
+			    border-radius: 5px;
+			}
+			.pagination a:hover:not(.active) {
+			    background-color: silver;
+			    border-radius: 5px;
+			}

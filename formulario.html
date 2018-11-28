@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario</title>
+  <meta charset="UTF-8">
+  <title>Javier Rollán</title>
+  <link rel="stylesheet" type="text/css" href="css/bnb.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  
+  <h1 class="header">Lenguaje de Marcas</h1>
+  <ul class="menu1">
+    <li class="menu2"><a href=index.html>Inicio</a></li>
+    <li class="menu2"><a href=listado.html>Listado de Asignaturas</a></li>
+    <li class="menu2"><a href=horario.html>Horario</a></li>
+    <li class="menu2 dropdown">
+      <a href="multimedia.html" class="dropbtn">Multimedia</a>
+      <div class="dropdown-content">
+        <a href=video.html>Video</a>
+        <a href=audio.html>Audio</a>
+        <a href=mapa.html>Mapa</a>
+      </div>
+    </li>
+    <li class="menu2"><a href=marcos.html>Marcos</a></li>
+    <li class="menu2"><a href=formulario.html>Formulario</a></li>
+    <li class="menu2 dropdown">
+      <a href=acercade.html class="dropbtn">Acerca de</a>
+      <div class="dropdown-content">
+        <a href="contacto.html">Contacto</a>
+        <!-- <a href="sobre.html">Sobre mi</a> -->
+      </div>
+    </li>
+  </ul>
+
+  <br>    
+    
+  <h2>Formulario de inscripción</h2>
+    
+     <!-- El <form> se mete para hacer cajitas botones desplegables etc.. -->
+
+<form action="/action_page.php"> 
+    
+<!-- Esto son las cajas estaticas de nombre apellidos y contraseña-->
+    
+    <!-- con el comando <fieldset> ponemos una caja que engloba varios recuadros-->
+    
+  <fieldset> 
+      <legend>Datos personales y contraseña:</legend><br>
+      Nombre:
+      <input type="text" name="Nombre" value="">
+      <br><br>
+      Apellidos:
+      <input type="text" name="Apellidos" value="">
+      <br><br>
+      Contraseña:
+      <input type="password" name="Contraseña" value="">
+      <br><br>
+      </fieldset>
+    
+    <!-- Esto es la caja que pone texto de prueba -->
+    
+<br>
+    
+    <textarea rows="10" cols="30" placeholder="Click here to add text"></textarea>
+    <input type="submit" value="Enviar formulario">
+    
+    <!-- Lista desplegable-->
+    
+    
+    <h2>Listado de Asignaturas</h2>
+    
+<p>Seleccione aqui su asignatura favorita</p>
+
+
+  <select name="Asignaturas">
+    <option selected>Lenguaje de Marcas</option>
+    <option>Formación y Orientación Laboral</option>
+    <option>Gestión de Bases de Datos</option>
+    <option>Planificación de Redes</option>
+    <option>Implantación de Sistemas Operativos</option>
+    <option>Fundamentos de Hardware</option>
+  </select>
+
+  <br><br><br dropzone="copy"> 
+  
+    
+    <!-- Esto es una lista haciendo scroll-->
+    
+    
+  <select name="Asignaturas" size="4">
+    <option selected>Lenguaje de Marcas</option>
+    <option>Formación y Orientación Laboral</option>
+    <option>Gestión de Bases de Datos</option>
+    <option>Planificación de Redes</option>
+    <option>Implantación de Sistemas Operativos</option>
+    <option>Fundamentos de Hardware</option>
+  </select>
+
+<br><br>
+
+    <input type="submit" value="Enviar">
+
+<br><br>
+        
+        
+        <!-- Casilla para marcar-->
+    
+         
+    <h2>Requisitos Tarea</h2>
+
+    <input type="checkbox" name="Requistos Tarea" value="Encabezados"/>Encabezados<br>
+    <input type="checkbox" name="Requistos Tarea" value="Listas"/>Listas<br>
+    <input type="checkbox" name="Requistos Tarea" value="Tablas"/>Tablas<br>
+    <input type="checkbox" name="Requistos Tarea" value="Formularios"/>Formularios<br>
+    <input type="checkbox" name="Requistos Tarea" value="Audio, video e immágen"/>Audio, video e immágen<br>
+    <input type="checkbox" name="Requistos Tarea" value="Enlaces"/>Enlaces<br>
+    <input type="checkbox" name="Requistos Tarea" value="Marcos"/>Marcos<br>
+    <input type="checkbox" name="Requistos Tarea" value="Menú"/>Menú<br> 
+ 
+<br>
+    <!-- Boton para resetear todo-->
+    
+    <input type="submit" value="Limpiar todos">
+    
+    <br>
+    <br>
+    
+    <!-- Ventana emergente-->
+    
+    <button onclick="alert ('PUBLICIDAD');">Presiona aqui</button>
+        
+ 	<!-- Buscador -->
+
+ 	<input class="buscador" type="text" name="search" placeholder="Search">
+    
+</form> 
+    
+    
+  <hr>
+
+  <a href="inicio.html">
+    <button class="button">Vuelta a inicio</button>
+  </a>
+
+  <footer>
+    <div class="pagination">
+      <br><br>
+      <a href="">&laquo;</a>
+      <a href="index.html">1</a>
+      <a href="listado.html">2</a>
+      <a href="horario.html">3</a>
+      <a href="mapa.html">4</a>
+      <a href="multimedia.html">5</a>
+      <a href="marcos.html">6</a>
+      <a href="formulario.html">7</a>
+      <a href="acercade.html">8</a>
+      <a href="">&raquo;</a>
+    </div>
+  </footer>
+  <br>
+
+    </body>
+</html>
