@@ -7,7 +7,7 @@
 	<id>https://javierrollan.github.io/index.html</id>
 
 	<entry>
-		<title>Ejemplo de Atom</title>
+		<title>Ejemplo de Atom Tiempo</title>
 		<link rel="alternate" type="text/html" href="https://www.tiempo.es/"/>
 		<updated>2018-11-28T15:00:00Z</updated>
 		<id>https://www.tiempo.es/</id>
@@ -15,18 +15,18 @@
 		<name>???</name>
 		<email>pruebaatom@gmail.net</email>
 		</author>
-		<summary>Ejemplo de Atom tiempo</summary>
+		<summary>El tiempo integrado Atom</summary>
 	</entry>
 
 	<entry>
-		<title>Ejemplo de Atom</title>
-		<link rel="alternate" type="text/html" href="https://www.elmundo.es/cataluna/2018/11/28/5bfe7bea21efa0dd7f8b4645.html"/>
+		<title>Ejemplo de Atom Noticia</title>
+		<link rel="alternate" type="text/html" href="https://www.elmundo.es/"/>
 		<updated>2018-11-27T15:00:00Z</updated>
 		<id>https://www.elmundo.es/cataluna/2018/11/28/5bfe7bea21efa0dd7f8b4645.html</id>
 		<author>
 		<name>???</name>
 		</author>
-	<summary>Ejemplo de Atom noticia</summary>
+	<summary>Noticia integrada Atom</summary>
 
 </entry>
 </feed>
