@@ -8,7 +8,7 @@
 
 	<entry>
 		<title>Ejemplo de Atom</title>
-		<link rel="alternate" type="text/html" href="http://www.infoalisal.com/seccion01"/>
+		<link rel="alternate" type="text/html" href="https://www.tiempo.es/"/>
 		<updated>2018-11-28T15:00:00Z</updated>
 		<id>https://www.tiempo.es/</id>
 		<author>
@@ -20,7 +20,7 @@
 
 	<entry>
 		<title>Ejemplo de Atom</title>
-		<link rel="alternate" type="text/html" href="http://www.infoalisal.com/seccion01"/>
+		<link rel="alternate" type="text/html" href="https://www.elmundo.es/cataluna/2018/11/28/5bfe7bea21efa0dd7f8b4645.html"/>
 		<updated>2018-11-27T15:00:00Z</updated>
 		<id>https://www.elmundo.es/cataluna/2018/11/28/5bfe7bea21efa0dd7f8b4645.html</id>
 		<author>
