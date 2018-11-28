@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0">
+
+	<channel>
+		
+			<title>Sindicacion RSS</title>
+			<link>https://javierrollan.github.io/index.html</link>
+			<description>
+				Este es un ejemplo de sindicacion RSS
+			</description>
+			<language>es</language>
+
+			<item>
+				<title>tiempo</title>
+				<link>https://www.tiempo.es/</link>
+				<description>
+					Ejemplo rss tiempo
+				</description>
+			</item>
+			<item>
+				<title>noticia</title>
+				<link>https://www.elmundo.es/cataluna/2018/11/28/5bfe7bea21efa0dd7f8b4645.html</link>
+				<description>
+					Ejemplo rss noticia
+				</description>
+			</item>
+
+	</channel>
+
+</rss>
