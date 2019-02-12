@@ -1,0 +1,79 @@
+*	{margin: 0; padding: 0;}
+
+/*Cuerpo*/
+
+html, body 	{
+	height: 100%;
+	background-color: grey;
+}
+
+/*Tabla*/
+
+table	{
+	width: 70%;
+	height: 100%;
+	border-collapse: collapse;
+	border: 6px solid white;
+	padding: 15px;
+
+}
+td 	{
+	border-collapse: collapse;
+	border: 2px dashed white;
+	padding: 14.9px;
+}
+
+/*Formulario*/
+
+input[]{
+	 
+}
+
+/*listas*/
+
+ul 	{
+	list-style: none;
+}
+
+/*Clases*/
+
+.navegador	{
+	background-color: #df9fdf;
+	height: 10%;
+}
+
+.cuerpo	{
+	background-color: black;
+	height: 80%;
+}
+
+.bajo	{
+	background-color: #df9fdf;
+	height: 10%;
+}
+
+.formulario	{
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+}
+
+.izq	{
+	background-color: #df9fdf;
+	width: 15%;
+	height: 100%;
+	float: left;
+}
+
+.der	{
+	background-color: #df9fdf;
+	width: 15%;
+	height: 100%;
+	float: right;
+}
+
+/*div error_strings*/
+
+.error_strings	{
+	float: right;
+}
