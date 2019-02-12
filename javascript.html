@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<meta charset="UTF-8">
+	<title>Prueba JavaScript II</title>
+	<script src="gen_validatorv4.js" type="text/javascript" language="JavaScript"></script>
+	<script>
+		function showDiv(elem){
+			if(elem.value == 1)	{
+				document.getElementById('hidden_div').style.display = "block";
+			}	else {
+				document.getElementById('hidden_div').style.display = "none";
+			}
+		}
+
+		function enableSelect(elem){
+			if (elem.value == 1) {
+				document.getElementById('select_marca').disabled = false;
+			}	else {
+				document.getElementById('select_marca').disabled = true;
+			}
+		}
+
+/*		document.getElementById("hora").innerHTML = formatAMPM();
+
+		function formatAMPM() {
+			var d = new Date(),
+				minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+				hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+				ampm = d.getHours() >= 12 ? 'pm' : 'am',
+				months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+				days = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+			return days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+		} */
+
+/*		var d = new Date();
+		document.getElementById("reloj").innerHTML = d; */
+	</script>
+</head>
+<body>
+
+	<div class="navegador">
+
+		<p id="reloj"></p>
+
+		<script>
+			document.getElementById("reloj").innerHTML = formatAMPM();
+
+			function formatAMPM() {
+				var d = new Date(),
+					minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+					hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+					ampm = d.getHours() >= 12 ? 'pm' : 'am',
+					months = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'],
+					days = ['Domingo','Lunes','Martes','Miercoles','Jueves','Viernes','Sabado'];
+				return d.getDate()+' '+days[d.getDay()]+' '+months[d.getMonth()]+' '+' '+d.getFullYear()+' '+hours+':'+minutes+ampm;
+			}
+		</script>
+
+	</div>
+
+	<div class="cuerpo">
+
+		<div class="izq">
+			
+<!--			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dolor saepe mollitia earum voluptate dignissimos quod accusantium, veniam. Voluptatum provident id, rem minima sapiente molestiae harum quis veritatis aliquam eos.
+			</p>	-->
+
+		</div>
+
+		<div class="der">
+			
+<!--			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat temporibus ipsum numquam ipsam. Tenetur eveniet, molestiae hic nesciunt impedit accusamus labore consectetur velit nisi, maxime officiis consequuntur, sit similique quos.
+			</p>	-->
+
+		</div>		
+
+		<div class="formulario">
+			
+	<form action="" name="myform" id="myform" accept-charset="utf-8">
+
+		<table>
+			<tr>
+				<td colspan="2">
+					Usuario: <input type="text" name="User" />
+					<div id='myform_User_errorloc' class="error_strings"></div>
+				</td>
+				<td colspan="4">
+					Contraseña: <input type="text" name="Pwd" />
+					<div id='myform_Pwd_errorloc' class="error_strings"></div>					
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					Correo Electrónico: <input type="text" name="Email" />
+					<div id='myform_Email_errorloc' class="error_strings"></div>					
+				</td>
+			</tr>
+				<td colspan="2">
+					Nombre: <input type="text" name="Nom" />
+					<div id='myform_Nom_errorloc' class="error_strings"></div>
+				</td>
+				<td colspan="2">
+					Fecha nacimiento: <input type="text" name="Fecha" />
+					<div id='myform_Fecha_errorloc' class="error_strings"></div>
+				</td>
+				<td colspan="2">
+					DNI: <input type="text" name="DNI" />
+					<div id='myform_DNI_errorloc' class="error_strings"></div>
+				</td>
+			<tr>
+				<td colspan="6">
+					Apellidos: <input type="text" name="Ap" />
+					<div id='myform_Ap_errorloc' class="error_strings"></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="6">
+					Calle y número: <input type="text" name="Calle" />
+					<div id='myform_Calle_errorloc' class="error_strings"></div>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					¿Tienes hijos?:
+					<ul>
+						<li><input type="radio" name="features" value="1" onchange="showDiv(this)" /><label>Si</label></li>
+						<li><input type="radio" name="features" value="0" onchange="showDiv(this)" checked/><label>No</label></li>
+					</ul>
+				</td>
+				<td colspan="4">
+					<div id="hidden_div" style="display: none">
+						<ul>
+							<li><input type="radio" name="features[0]" value="2" checked /><label>1 hijo</label></li>
+							<li><input type="radio" name="features[0]" value="2" /><label>2 hijos</label></li>
+							<li><input type="radio" name="features[0]" value="2" /><label>3 hijos o máss</label></li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+				<td colspan="2">
+					Código postal: <input type="text" name="Postal" />
+					<div id='myform_Postal_errorloc' class="error_strings"></div>
+				</td>
+				<td colspan="2">
+					Ciudad: 
+					<select name="Ciudad" id="">
+						<option>Escoja una opción</option>
+						<option>Madrid</option>
+						<option>Alcala de Henares</option>
+						<option>Guadalajara</option>
+						<option>Torrejon del rey</option>
+						<option>Daganzo</option>
+					</select>
+					
+				</td>
+				<td colspan="2">
+					Teléfono: <input type="text" name="Telf" />
+					<div id='myform_Telf_errorloc' class="error_strings"></div>
+				</td>
+			<tr>
+				<td colspan="2">
+					Ocupación: <input type="text" name="Ocu" />
+					<div id='myform_Ocu_errorloc' class="error_strings"></div>
+				</td>
+				<td colspan="4">
+					Estado Civil:
+					<ul>
+						<li><input type="radio" name="features[1]" id="features_0" value="Soltero" checked /><label>Soltero</label></li>
+						<li><input type="radio" name="features[1]" id="features_1" value="Casado" /><label>Casado</label></li>
+						<li><input type="radio" name="features[1]" id="features_2" value="Pareja"/><label>Pareja de hecho</label></li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Hobbies:
+					<ul>
+						<li><input type="checkbox" name="features[2]" id="features_3" value="Deporte" /><label>Deporte</label></li>
+						<li><input type="checkbox" name="features[2]" id="features_4" value="Cine" /><label>Cine</label></li>
+						<li><input type="checkbox" name="features[2]" id="features_5" value="Copas" /><label>Copas</label></li>
+					</ul>
+				</td>
+				<td colspan="2">
+					¿Tienes móvil?:
+					<ul>
+						<li><input type="radio" name="features[3]" id="features_6" value="1" onchange="enableSelect(this)" /><label>Si</label></li>
+						<li><input type="radio" name="features[3]" id="features_7" value="0" onchange="enableSelect(this)" checked /><label>No</label></li>
+					</ul>
+				</td>
+				<td colspan="2">
+					Marca: 
+					<select id="select_marca">
+						<option>seleccione una opción</option>
+						<option>Samsung</option>
+						<option>Apple</option>
+						<option>Windows</option>
+						<option>Xiaoming</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">Comentarios Personales</td>
+				<td colspan="4">
+					<textarea name="Comen" cols="50" rows="3"></textarea>
+				</td>
+			<tr>
+				<td>
+					<input type="submit" value="Enviar Datos" />
+					<input type="reset" value="Borrar Datos" />
+				</td>
+			</tr>
+		</table>
+		
+	</form>
+	<script language="JavaScript" type="text/javascript" xml:space="preserve">
+
+  		var frmvalidator  = new Validator("myform");
+			frmvalidator.EnableOnPageErrorDisplay();
+   			frmvalidator.EnableMsgsTogether();
+
+    		frmvalidator.addValidation("User","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("User","minlen=8","Debe ser 8 carácteres mínimo");
+
+    		frmvalidator.addValidation("Pwd","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Pwd","alnum","Solo puede contener letras y números");
+    		frmvalidator.addValidation("Pwd","minlen=8","Debe ser 8 carácteres mínimo");
+
+    		frmvalidator.addValidation("Email","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Email","email","Este no es un email válido");
+    		frmvalidator.addValidation("Email","maxlen=50","Supera la longitud máxima");
+
+    		frmvalidator.addValidation("Nom","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Nom","alpha","Solo puede contener letras");
+
+    		frmvalidator.addValidation("Fecha","req");
+    		frmvalidator.addValidation("Fecha","email");
+
+    		frmvalidator.addValidation("DNI","req");
+    		frmvalidator.addValidation("DNI","email");
+
+    		frmvalidator.addValidation("Ap","req");
+    		frmvalidator.addValidation("Ap","alpha","Solo puede contener letras");
+
+    		frmvalidator.addValidation("Calle","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Calle","alnum_s");
+
+    		frmvalidator.addValidation("Postal","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Postal","num","Solo puede contener números");
+    		frmvalidator.addValidation("Postal","num","Solo puede contener números");
+
+    		frmvalidator.addValidation("Telf","req");
+    		frmvalidator.addValidation("Telf","email");
+
+		
+	</script>		
+
+		</div>
+		
+	</div>
+
+	<div class="bajo"></div>	
+
+</body>
+</html>
