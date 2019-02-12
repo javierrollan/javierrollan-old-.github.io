@@ -227,6 +227,7 @@
 
     		frmvalidator.addValidation("User","req","Este campo es obligatorio");
     		frmvalidator.addValidation("User","minlen=8","Debe ser 8 carácteres mínimo");
+    		frmvalidator.addValidation("User","alnum","Solo puede contener letras y números");
 
     		frmvalidator.addValidation("Pwd","req","Este campo es obligatorio");
     		frmvalidator.addValidation("Pwd","alnum","Solo puede contener letras y números");
@@ -237,26 +238,31 @@
     		frmvalidator.addValidation("Email","maxlen=50","Supera la longitud máxima");
 
     		frmvalidator.addValidation("Nom","req","Este campo es obligatorio");
-    		frmvalidator.addValidation("Nom","alpha","Solo puede contener letras");
+    		frmvalidator.addValidation("Nom","alpha_s","Solo puede contener letras");
 
-    		frmvalidator.addValidation("Fecha","req");
-    		frmvalidator.addValidation("Fecha","email");
+    		frmvalidator.addValidation("Fecha","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Fecha","num","No admite letras");
 
-    		frmvalidator.addValidation("DNI","req");
-    		frmvalidator.addValidation("DNI","email");
+    		frmvalidator.addValidation("DNI","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("DNI","alnum","Contiene carácteres inválidos");
+    		frmvalidator.addValidation("DNI","minlen=9","Longitud inadecuada");
+    		frmvalidator.addValidation("DNI","maxlen=9","Longitud inadecuada");
 
-    		frmvalidator.addValidation("Ap","req");
-    		frmvalidator.addValidation("Ap","alpha","Solo puede contener letras");
+    		frmvalidator.addValidation("Ap","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Ap","alpha_s","Solo puede contener letras");
 
     		frmvalidator.addValidation("Calle","req","Este campo es obligatorio");
     		frmvalidator.addValidation("Calle","alnum_s");
 
     		frmvalidator.addValidation("Postal","req","Este campo es obligatorio");
     		frmvalidator.addValidation("Postal","num","Solo puede contener números");
-    		frmvalidator.addValidation("Postal","num","Solo puede contener números");
+    		frmvalidator.addValidation("Postal","minlen=5","Longitud inadecuada");
+    		frmvalidator.addValidation("Postal","maxlen=5","Longitud inadecuada");
 
-    		frmvalidator.addValidation("Telf","req");
-    		frmvalidator.addValidation("Telf","email");
+    		frmvalidator.addValidation("Telf","req","Este campo es obligatorio");
+    		frmvalidator.addValidation("Telf","num","Solo puede contener números");
+    		frmvalidator.addValidation("Telf","maxlen=9","Longitud inadecuada");
+    		frmvalidator.addValidation("Telf","minlen=9","Longitud inadecuada");
 
 		
 	</script>		
