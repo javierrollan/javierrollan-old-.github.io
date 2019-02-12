@@ -4,7 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<meta charset="UTF-8">
 	<title>Prueba JavaScript II</title>
-	<script src="gen_validatorv4.js" type="text/javascript" language="JavaScript"></script>
+	<script src="gen_validatorv4.js"></script>
 	<script>
 		function showDiv(elem){
 			if(elem.value == 1)	{
@@ -80,7 +80,7 @@
 
 		<div class="formulario">
 			
-	<form action="" name="myform" id="myform" accept-charset="utf-8">
+	<form name="myform" id="myform" accept-charset="utf-8">
 
 		<table>
 			<tr>
@@ -99,6 +99,7 @@
 					<div id='myform_Email_errorloc' class="error_strings"></div>					
 				</td>
 			</tr>
+			<tr>
 				<td colspan="2">
 					Nombre: <input type="text" name="Nom" />
 					<div id='myform_Nom_errorloc' class="error_strings"></div>
@@ -141,13 +142,14 @@
 					</div>
 				</td>
 			</tr>
+			<tr>
 				<td colspan="2">
 					Código postal: <input type="text" name="Postal" />
 					<div id='myform_Postal_errorloc' class="error_strings"></div>
 				</td>
 				<td colspan="2">
 					Ciudad: 
-					<select name="Ciudad" id="">
+					<select name="Ciudad">
 						<option>Escoja una opción</option>
 						<option>Madrid</option>
 						<option>Alcala de Henares</option>
@@ -161,6 +163,7 @@
 					Teléfono: <input type="text" name="Telf" />
 					<div id='myform_Telf_errorloc' class="error_strings"></div>
 				</td>
+			</tr>
 			<tr>
 				<td colspan="2">
 					Ocupación: <input type="text" name="Ocu" />
@@ -216,7 +219,7 @@
 		</table>
 		
 	</form>
-	<script language="JavaScript" type="text/javascript" xml:space="preserve">
+	<script>
 
   		var frmvalidator  = new Validator("myform");
 			frmvalidator.EnableOnPageErrorDisplay();
