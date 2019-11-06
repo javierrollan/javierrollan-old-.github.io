@@ -17,7 +17,7 @@ body {
 }
 
 /*Navbar*/
-.navbar .menu1 .menu2{
+.navbar, .menu1, .menu2{
   display: flex;
   background-color: #333;
 }
@@ -67,7 +67,9 @@ body {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;}
 
 .dropdown:hover .dropdown-content {
     display: block;
