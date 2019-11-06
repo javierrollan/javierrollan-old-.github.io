@@ -16,6 +16,11 @@ body {
   color: white;
 }
 
+.line {
+  width: 25%;
+  size: 10px;
+}
+
 /*Navbar*/
 .topnav {
   overflow: hidden;
