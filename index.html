@@ -5,7 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/estilo1.css">
-
+	<script src="https://kit.fontawesome.com/ddcc9fedcc.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
 	
@@ -16,14 +17,25 @@
 	</div>
 
 	<!-- Nav -->
-	<div class="navbar">
-		<ul class="menu1">
-			<li class="menu2"><a href="">Inicio</a></li>
-			<li class="menu2"><a href="">Proyectos</a></li>
-			<li class="menu2"><a href="">Contacto</a></li>
-		</ul>
+	<div class="topnav" id="myTopnav">
+		<a href="" class="active">Inicio</a>
+		<a href="">Certificados</a>
+		<a href="">Contacto</a>
+		<div class="dropdown">
+			<button class="dropbtn">Dropdown
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<a href="">Link 1</a>
+				<a href="">Link 2</a>
+				<a href="">Link 3</a>
+			</div>
+		</div>
+		<a href="">Sobre Mi</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 	</div>
 
+	<!-- Cuerpo -->
 	<div class="row">
 		<div class="side">
 			<h2>Sobre mi</h2>
@@ -53,8 +65,12 @@
 		</div>
 	</div>
 
+	<!-- Footer -->
 	<div class="footer">
 		<h2>Footer</h2>
+		<i class="fab fa-instagram"></i>
+		<i class="fab fa-twitter"></i>
+		<i class="fab fa-linkedin"></i>
 	</div>
 
 </body>
