@@ -17,7 +17,7 @@ body {
 }
 
 /*Navbar*/
-.navbar {
+.navbar .menu1 .menu2{
   display: flex;
   background-color: #333;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .menu2 .dropdown  {
-    display: inline-block;
+    display: flex;
 }
 
 .dropdown-content {
