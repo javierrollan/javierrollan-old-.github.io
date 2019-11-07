@@ -12,6 +12,11 @@ body {
   color: white;
 }
 
+/*Stacking de Fontawesome*/
+.stc  {
+  vertical-align: top;
+}
+
 /* Header/logo Title */
 .header {
   padding: 60px;
