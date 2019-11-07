@@ -7,14 +7,22 @@ body {
   font-family: Arial;
   margin: 0;
 }
-/*Colores Para FontAwesome*/
+/*FontAwesome*/
 .white  {
   color: white;
 }
 
-/*Stacking de Fontawesome*/
 .stc  {
   vertical-align: top;
+}
+
+.fade{
+  opacity: 0.6;
+  transition: 0.;
+}
+
+.fade:hover {
+  opacity: 1;
 }
 
 /* Header/logo Title */
