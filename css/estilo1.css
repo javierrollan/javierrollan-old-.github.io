@@ -22,9 +22,9 @@ body {
 }
 
 .stc {
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
-
 
 /* Header/logo Title */
 .header {
@@ -170,6 +170,14 @@ body {
   padding-bottom: 10px;
   padding-right: 5px;
   color: white;
+}
+
+.more {
+  border: none;
+  outline: none;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .pyt3 {
