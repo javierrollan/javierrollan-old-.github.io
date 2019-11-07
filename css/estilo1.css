@@ -39,7 +39,7 @@ body {
   color: white;
 }
 
-/*Navbar*/
+/* Navbar */
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -112,14 +112,13 @@ body {
   display: block;
 }
 
-/* Column container */
+/* Body */
 .row {  
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+
 .side {
   flex: 30%;
   background-color: #f1f1f1;
@@ -138,6 +137,35 @@ body {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
+}
+
+/* Habilidades Destacadas */
+
+.container  {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.pyt3 {
+  width: 75%;
+  background-color: #7aa0cb;
+}
+
+.orasql {
+  width: 75%;
+  background-color: #ec4346;
+}
+
+.bigdata {
+  width: 75%;
+  background-color: #feb346;
 }
 
 /* Footer */
