@@ -11,11 +11,11 @@ function skills2(ele)	{
 	var x = document.getElementById("skillsbar");
 	if (x != null)	{
 		if (x.style.display == "block")	{
-			x.style.display = 'none';
+			x.style.display = 'block';
 		}
 		else
 		{
-			x.style.display = 'block';
+			x.style.display = 'none';
 		}
 		return false;
 	}
