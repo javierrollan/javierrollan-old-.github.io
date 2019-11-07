@@ -151,6 +151,10 @@ body {
   padding: 2px 16px;
 }
 
+.ali  {
+  vertical-align: middle;
+}
+
 /* Habilidades Destacadas */
 
 .container  {
