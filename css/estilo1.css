@@ -144,7 +144,7 @@ body {
 .container  {
   width: 100%;
   background-color: #ddd;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .skills {
@@ -157,19 +157,19 @@ body {
 .pyt3 {
   width: 75%;
   background-color: #7aa0cb;
-  border-radius: 12px;  
+  border-radius: 6px;  
 }
 
 .orasql {
   width: 75%;
   background-color: #ec4346;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .bigdata {
   width: 75%;
   background-color: #feb346;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 /* Footer */
