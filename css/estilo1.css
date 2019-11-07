@@ -7,6 +7,10 @@ body {
   font-family: Arial;
   margin: 0;
 }
+/*Colores Para FontAwesome*/
+.white  {
+  color: white;
+}
 
 /* Header/logo Title */
 .header {
@@ -17,8 +21,9 @@ body {
 }
 
 .line {
-  width: 25%;
+  width: 45%;
   size: 10px;
+  color: white;
 }
 
 /*Navbar*/
