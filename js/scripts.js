@@ -8,7 +8,7 @@ function myFunction() {
 }
 
 function skills2(ele)	{
-	var x = document.getElementById(ele);
+	var x = document.getElementById("skillsbar");
 	if (x != null)	{
 		if (x.style.display == "block")	{
 			x.style.display = 'none';
