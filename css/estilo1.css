@@ -12,10 +12,6 @@ body {
   color: white;
 }
 
-.stc  {
-  vertical-align: top;
-}
-
 .fade{
   opacity: 0.6;
   transition: 0.05s;
@@ -24,6 +20,11 @@ body {
 .fade:hover {
   opacity: 1;
 }
+
+.stc {
+  padding-bottom: 5px;
+}
+
 
 /* Header/logo Title */
 .header {
