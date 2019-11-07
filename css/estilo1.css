@@ -189,6 +189,10 @@ body {
   border-radius: 6px;
 }
 
+#skillsbar  {
+  display: none;
+}
+
 .ingl {
   width: 70%;
   background-color: #414abb;

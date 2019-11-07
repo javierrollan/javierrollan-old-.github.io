@@ -6,3 +6,7 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+function skills2()	{
+	document.getElementById("skillsbar").style.display = "block";
+}
