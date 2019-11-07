@@ -7,6 +7,16 @@ function myFunction() {
   }
 }
 
-function skills2()	{
-	document.getElementById("skillsbar").style.display = "block";
+function skills2(ele)	{
+	var x = document.getElementById(ele);
+	if (x != null)	{
+		if (x.style.display == "block")	{
+			x.style.display = 'none';
+		}
+		else
+		{
+			x.style.display = 'block';
+		}
+		return false;
+	}
 }
