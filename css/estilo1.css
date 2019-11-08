@@ -26,6 +26,10 @@ body {
   padding-top: 10px;
 }
 
+.certf {
+  font-size: 2em;
+}
+
 /* Header/logo Title */
 .header {
   padding: 60px;
