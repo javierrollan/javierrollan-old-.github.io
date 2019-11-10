@@ -138,6 +138,18 @@ body {
   padding: 20px;
 }
 
+.l-cont {
+  flex: 50%;
+  background-color: green;
+  padding: 20px;
+}
+
+.r-cont {
+  flex: 50%;
+  background-color: yellow;
+  padding: 20px;
+}
+
 /* Fake image, just for this example */
 .dni {
   width: 100%;
