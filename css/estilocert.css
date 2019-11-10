@@ -1,7 +1,23 @@
 /*Cuerpo*/
 
+.flex-container	{
+	display: flex;
+	flex-direction: column;
+}
+
 .main	{
   flex: 100%;
   background-color: #f1ede8;
   padding: 20px;	
+}
+
+.l-cont	{
+	flex: 50%;
+	background-color: inherit;
+	padding: 20px;
+}
+
+.r-cont	{
+	flex: 50%;
+	background-color: white;
 }
