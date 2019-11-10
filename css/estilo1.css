@@ -139,14 +139,14 @@ body {
 }
 
 .l-cont {
-  flex: 50%;
-  background-color: green;
+  flex: 30%;
+  background-color: f1ede8;
   padding: 20px;
 }
 
 .r-cont {
-  flex: 50%;
-  background-color: yellow;
+  flex: 70%;
+  background-color: white;
   padding: 20px;
 }
 
