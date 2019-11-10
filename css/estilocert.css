@@ -1,0 +1,7 @@
+/*Cuerpo*/
+
+.main	{
+  flex: 100%;
+  background-color: #f1ede8;
+  padding: 20px;	
+}
