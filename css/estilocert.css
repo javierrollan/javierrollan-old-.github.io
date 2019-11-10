@@ -13,11 +13,12 @@
 
 .l-cont	{
 	flex: 50%;
-	background-color: inherit;
+	background-color: green;
 	padding: 20px;
 }
 
 .r-cont	{
 	flex: 50%;
-	background-color: white;
+	background-color: yellow;
+	padding: 20px;
 }
